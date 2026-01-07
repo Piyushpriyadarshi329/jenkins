@@ -20,7 +20,7 @@ pipeline {
         sh '''
           docker stop node-app || true
           docker rm node-app || true
-          docker run -d -p 3000:3000 --name node-app node-jenkins-app
+          docker run -d -p 4001:4001 --name node-app node-jenkins-app
         '''
       }
     }
